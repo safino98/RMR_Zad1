@@ -137,7 +137,7 @@ int MainWindow::processThisRobot(TKobukiData robotdata)
 
     lr = tickToMeter*(robotdata.EncoderRight-encoderRightValue+encoderRightOverflow*65536);
     ll = tickToMeter*(robotdata.EncoderLeft-encoderLeftValue+encoderLeftOverflow*65536);
-    celkova = celkova + lr;
+    //celkova = celkova + lr;
     encoderRightValue = robotdata.EncoderRight;
     encoderLeftValue = robotdata.EncoderLeft;
 
@@ -213,7 +213,7 @@ int MainWindow::processThisRobot(TKobukiData robotdata)
     {
 
         emit uiValuesChanged(robotdata.EncoderLeft,11,12);
-    }*/
+    }
     datacounter++;
     cout<<"gyro = "<<robotdata.GyroAngle<<" encoder = "<<robotdata.EncoderRight;
 
