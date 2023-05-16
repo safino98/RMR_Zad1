@@ -156,14 +156,7 @@ int MainWindow::processThisRobot(TKobukiData robotdata)
     phiOldValue = phi;
     //printf("\npozicia robota x= %f y= %f", x, y);
 
-    int map[240][240];
-    float xo, yo;
-    float alfa;// = ((360.0-copyOfLaserData.Data[k].scanAngle)*3.14159)/180.0;
-    for(int k = 1; k<=copyOfLaserData.numberOfScans; k++){
-        //printf("vzdialonest %f a uhol %f\n", copyOfLaserData.Data[i].scanDistance, copyOfLaserData.Data[i].scanAngle);
 
-
-    }
 
 
 // Tu zadaj zelanu poziciu
